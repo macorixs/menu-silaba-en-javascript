@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu vertical</title>
+</head>
+<body>
+   
+ <script>
+function mostraricono(){
+    var icono_mas = document.getElementById('icono')
+    icono_mas.display = 'none';
+    icono_mas.style.visibility = 'hidden';
+   
+  
+}
+
+function oscultaricono(){
+    var icono = document.getElementById('icono')
+    icono.style.display = 'block';
+    icono.style.visibility = 'visible';
+    
+    
+
+}
+
+function mostraricono(){
+    var menu = document.getElementById('menu')
+    menu.style.display = 'none';
+    menu.style.visibility = 'hidden';
+}
+
+function oscultaricono(){
+    var menu = document.getElementById('menu')
+    menu.style.display = 'block';
+    menu.style.visibility = 'visible';
+}
+
+
+
+
+
+
+
+ </script> 
+ <input type="checkbox" id="btn-menu">  
+
+ <header>
+    <nav id="menu">
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#satelite">satelite</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#radar">radar</a></li>
+            <li><a href="#herramienta">herramienta</a></li>
+            <li><a href="#configuracion">configuracion</a></li>
+           
+    </ul>
+    </nav>
+</header>
+
+
+
+
+<div id="icono">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-justify" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5"/>
+      </svg>
+    
+</div>
+
+
+<button   onclick="mostraricono()">oscultar</button>
+<button  onclick="oscultaricono()">mostrar</button>    
+</body>
+</html>
